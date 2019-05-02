@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import Stopwatch from "./Stopwatch";
+import App from "./App";
 
 ReactDOM.render(
-    <Stopwatch />,
+    <App />,
     document.getElementById('root')
 );
 
