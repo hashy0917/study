@@ -5,7 +5,7 @@ const dist = path.resolve(__dirname, 'dist')
 
 export default {
   mode: 'development',
-  entry: src + '/index.js',
+  entry: src + '/main.js',
 
   output: {
     path: dist,
@@ -18,7 +18,12 @@ export default {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
-      }
+      },
+        {
+            test: /\.css/,
+            exclude: /node_modules/,
+            loader: 'css-loader'
+        }
     ]
   },
 
