@@ -1,6 +1,7 @@
 ---
 - name: Provisioning to instances
   hosts: cloud_servers
+  become: true # sudo
   tasks:
   - name: be sure httpd is installed
     apt: 
