@@ -14,3 +14,9 @@ main.tfにubuntuのqcow2のimageのuuidを調べる項目を追加し、今ま�
 ansibleがlocalhostに接続して[terraform_module](https://docs.ansible.com/ansible/2.9/modules/terraform_module.html)から `terraform apply`を実行。
 インスタンスが立ち上がったらダイナミックインベントリのスクリプト(inventry.sh)からインベントリ情報を取得し、ansible playbook
 
+## 動作
+1. ansibleplaybookする
+2. terraform applyされる
+3. nutanixにインスタンスが立ち上がり、 `cloud-init.yml`で初期設定
+4. ssh-agentでssh認証できる状態になっているはずなのでansibleが動く
+5. でけた
