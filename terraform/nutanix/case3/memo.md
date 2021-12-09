@@ -9,4 +9,8 @@ main.tfにubuntuのqcow2のimageのuuidを調べる項目を追加し、今ま�
 
 
 ## memo
-ansible-playbook --inventory-file=/path/to/terraform-inventory deploy/playbook.yml
+使い方
+`ansible-playbook -i ./inventry.sh ./site.yml -u ubuntu`
+ansibleがlocalhostに接続して[terraform_module](https://docs.ansible.com/ansible/2.9/modules/terraform_module.html)から `terraform apply`を実行。
+インスタンスが立ち上がったらダイナミックインベントリのスクリプト(inventry.sh)からインベントリ情報を取得し、ansible playbook
+
