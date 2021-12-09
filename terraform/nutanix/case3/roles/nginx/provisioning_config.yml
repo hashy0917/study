@@ -1,0 +1,15 @@
+---
+- name: Provisioning to instances
+  hosts: cloud_servers
+  tasks:
+  - name: be sure httpd is installed
+    apt: 
+      name: nginx
+      state: latest
+      update_cache: yes
+      cache_valid_time: 3600
+
+  - name: be sure httpd is running and enabled
+    service: 
+      name: nginx
+      enabled: yes

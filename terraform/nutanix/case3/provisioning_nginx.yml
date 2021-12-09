@@ -1,0 +1,6 @@
+---
+- name: nginx setup #実行するタスク名
+  hosts: all #対象ホスト（今回は特に指定する必要がなかったのでallとした）
+  become: true #sudoするかどうか
+  roles: #タスクを記述しているディレクトリ
+    - role: nginx 
