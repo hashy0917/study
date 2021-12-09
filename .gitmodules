@@ -1,0 +1,6 @@
+[submodule "terraform/nutanix/terraform-inventory"]
+	path = terraform/nutanix/terraform-inventory
+	url = https://github.com/adammck/terraform-inventory.git
+[submodule "terraform/nutanix/terraform_blog"]
+	path = terraform/nutanix/terraform_blog
+	url = https://github.com/nutanixdev/terraform_blog
