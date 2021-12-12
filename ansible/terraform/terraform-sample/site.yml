@@ -1,3 +1,0 @@
----
-- import_playbook: setup_cloud.yml
-- import_playbook: provisioning_config.yml
