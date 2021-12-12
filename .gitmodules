@@ -4,3 +4,9 @@
 [submodule "terraform/nutanix/terraform_blog"]
 	path = terraform/nutanix/terraform_blog
 	url = https://github.com/nutanixdev/terraform_blog
+[submodule "ansible-study"]
+	path = ansible-study
+	url = git@github.com:hashy0917/ansible-study.git
+[submodule "ansible/terraform_blog"]
+	path = ansible/terraform_blog
+	url = https://github.com/nutanixdev/terraform_blog
