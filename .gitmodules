@@ -13,3 +13,30 @@
 [submodule "ansible/ansible-study"]
 	path = ansible/ansible-study
 	url = git@github.com:hashy0917/ansible-study.git
+[submodule "herokuStudy-"]
+	path = herokuStudy-
+	url = https://github.com/hashy0917/herokuStudy-.git
+[submodule "StudyingCocosCreator"]
+	path = StudyingCocosCreator
+	url = git@github.com:hashy0917/StudyingCocosCreator.git
+[submodule "WindowsAppStudy"]
+	path = WindowsAppStudy
+	url = git@github.com:hashy0917/WindowsAppStudy.git
+[submodule "WindowsPowerShellStudy"]
+	path = WindowsPowerShellStudy
+	url = git@github.com:hashy0917/WindowsPowerShellStudy.git
+[submodule "GitPitch-study"]
+	path = GitPitch-study
+	url = git@github.com:hashy0917/GitPitch-study.git
+[submodule "CrawlingScrapingStudy"]
+	path = CrawlingScrapingStudy
+	url = git@github.com:hashy0917/CrawlingScrapingStudy.git
+[submodule "ros-study"]
+	path = ros-study
+	url = git@github.com:hashy0917/ros-study.git
+[submodule "PHP-Study"]
+	path = PHP-Study
+	url = git@github.com:hashy0917/PHP-Study.git
+[submodule "flutter-study"]
+	path = flutter-study
+	url = git@github.com:hashy0917/flutter-study.git
