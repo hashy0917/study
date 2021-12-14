@@ -10,9 +10,6 @@
 [submodule "ansible/ansible-study"]
 	path = ansible/ansible-study
 	url = git@github.com:hashy0917/ansible-study.git
-[submodule "herokuStudy-"]
-	path = herokuStudy-
-	url = https://github.com/hashy0917/herokuStudy-.git
 [submodule "StudyingCocosCreator"]
 	path = StudyingCocosCreator
 	url = git@github.com:hashy0917/StudyingCocosCreator.git
@@ -40,3 +37,6 @@
 [submodule "k8s/okteto-study"]
 	path = k8s/okteto-study
 	url = git@github.com:hashy0917/okteto-study.git
+[submodule "Heroku-study"]
+	path = Heroku-study
+	url = git@github.com:hashy0917/Heroku-study.git
