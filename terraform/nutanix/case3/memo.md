@@ -20,3 +20,8 @@ ansibleがlocalhostに接続して[terraform_module](https://docs.ansible.com/an
 3. nutanixにインスタンスが立ち上がり、 `cloud-init.yml`で初期設定
 4. ssh-agentでssh認証できる状態になっているはずなのでansibleが動く
 5. でけた
+
+## ansible
+```
+ansible -i inventry.sh -u ubuntu -m ping all
+```
