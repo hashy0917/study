@@ -4,12 +4,6 @@
 [submodule "terraform/nutanix/terraform_blog"]
 	path = terraform/nutanix/terraform_blog
 	url = https://github.com/nutanixdev/terraform_blog
-[submodule "ansible/terraform_blog"]
-	path = ansible/terraform_blog
-	url = https://github.com/nutanixdev/terraform_blog
-[submodule "ansible/ansible-study"]
-	path = ansible/ansible-study
-	url = git@github.com:hashy0917/ansible-study.git
 [submodule "StudyingCocosCreator"]
 	path = StudyingCocosCreator
 	url = git@github.com:hashy0917/StudyingCocosCreator.git
@@ -40,3 +34,6 @@
 [submodule "Heroku-study"]
 	path = Heroku-study
 	url = git@github.com:hashy0917/Heroku-study.git
+[submodule "ansible-study"]
+	path = ansible-study
+	url = git@github.com:hashy0917/ansible-study.git
