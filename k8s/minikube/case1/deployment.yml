@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-deploy
+spec:                          # デプロイメントの設定内容
+  replicas: 3
+  selector:                    # デプロイメントポッドの設定内容
+    matchLabels:
+      app: web
+  template:                    #ここからポッドのテンプレート
+    metadata:
+      labels:
+        app: web               #ポッドのラベル
+    spec:
+      containers:
+      - image: nginx:1.16
+        name: nginx
