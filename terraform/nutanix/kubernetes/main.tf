@@ -23,7 +23,7 @@ provider "nutanix" {
 }
 
 data "nutanix_image" "image" {
-  image_name = "ubuntu-20.04-server-cloudimg-amd64.qcow2"
+  image_name = "CentOS-7-x86_64-2111.qcow2"
 }
 
 locals {
