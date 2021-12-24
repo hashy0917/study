@@ -47,9 +47,6 @@ resource "nutanix_virtual_machine" "vm" {
       kind = "image"
       uuid = local.default_image_uuid
     }
-  }
-
-  disk_list {
     disk_size_bytes = 10 * 1024 * 1024 * 1024
     device_properties {
       device_type = "DISK"
