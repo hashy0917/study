@@ -36,7 +36,7 @@ resource "nutanix_virtual_machine" "vm" {
   cluster_uuid         = data.nutanix_cluster.cluster.id
   num_vcpus_per_socket = "2"
   num_sockets          = "1"
-  memory_size_mib      = 1024
+  memory_size_mib      = 4096
 
 
   #cloud-init
@@ -47,10 +47,7 @@ resource "nutanix_virtual_machine" "vm" {
       kind = "image"
       uuid = local.default_image_uuid
     }
-  }
-
-  disk_list {
-    disk_size_bytes = 10 * 1024 * 1024 * 1024
+    disk_size_bytes = 30 * 1024 * 1024 * 1024
     device_properties {
       device_type = "DISK"
       disk_address = {
