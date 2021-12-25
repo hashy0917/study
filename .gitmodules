@@ -37,3 +37,6 @@
 [submodule "ansible-study"]
 	path = ansible-study
 	url = git@github.com:hashy0917/ansible-study.git
+[submodule "cloudflare-study"]
+	path = cloudflare-study
+	url = git@github.com:hashy0917/cloudflare-study.git
