@@ -40,3 +40,6 @@
 [submodule "cloudflare-study"]
 	path = cloudflare-study
 	url = git@github.com:hashy0917/cloudflare-study.git
+[submodule "competitionProgramming"]
+	path = competitionProgramming
+	url = git@github.com:hashy0917/competitionProgramming.git
