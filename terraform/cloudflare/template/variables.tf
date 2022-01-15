@@ -6,16 +6,14 @@ variable "vsphere_password" {
   type = string
 }
 variable "vsphere_server" {
-  type = string
+  type      = string
 }
 
 # cloudflare
 variable "cloudflare_email" {
-  type = string
 }
-variable "cloudflare_api_key" {
-  type = string
+variable "cloudflare_token" {
 }
-variable "cloudflare_zone_id" {
-  type = string
+variable "cloudflare_domain" {
 }
+

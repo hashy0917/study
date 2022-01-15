@@ -1,14 +1,3 @@
-terraform {
-  required_providers {
-    vsphere = {
-      source = "hashicorp/vsphere"
-    }
-    cloudflare = {
-      source = "cloudflare/cloudflare"
-    }
-  }
-}
-
 provider "vsphere" {
   user           = var.vsphere_user
   password       = var.vsphere_password
@@ -20,7 +9,7 @@ provider "vsphere" {
 
 provider "cloudflare" {
   email = var.cloudflare_email
-  api_key = var.cloudflare_api_key
+  token = var.cloudflare_token
 }
 
 data "vsphere_datacenter" "dc" {
@@ -52,13 +41,8 @@ data "vsphere_network" "network" {
   datacenter_id = data.vsphere_datacenter.dc.id
 }
 
-variable "name" {
-  default = "cloudflared-test"
-}
-
-
 resource "vsphere_virtual_machine" "vm" {
-  name             = "${var.name}"
+  name             = "terraform-test"
   resource_pool_id = data.vsphere_resource_pool.pool.id
   datastore_id     = data.vsphere_datastore.datastore.id
 
@@ -78,8 +62,8 @@ resource "vsphere_virtual_machine" "vm" {
     template_uuid = data.vsphere_virtual_machine.template.id
     customize {
       linux_options {
-        host_name = "${var.name}"
-        domain    = "${var.name}.hashy0917.cf"
+        host_name = "terraform-test"
+        domain    = "terraform-test.svrop.net"
       }
       network_interface {
         #ipv4_address = "10.0.0.10"
@@ -90,11 +74,10 @@ resource "vsphere_virtual_machine" "vm" {
   }
 }
 
-resource "cloudflare_record" "cloudflared-test" {
-  #domain = var.cloudflare_domain
-  zone_id = var.cloudflare_zone_id
-  name   = "${var.name}"
-  value  = vsphere_virtual_machine.vm.default_ip_address
+resource "cloudflare_record" "gill-search-manage" {
+  domain = var.cloudflare_domain
+  name   = "gill-search-manage"
+  value  = "${vsphere_virtual_machine.vm.default_ip_address}"
   type   = "A"
   ttl    = 1
   proxied = false
