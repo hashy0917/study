@@ -43,3 +43,6 @@
 [submodule "competitionProgramming"]
 	path = competitionProgramming
 	url = git@github.com:hashy0917/competitionProgramming.git
+[submodule "STM32_FreeRTOS_Study"]
+	path = STM32_FreeRTOS_Study
+	url = git@github.com:hashy0917/STM32_FreeRTOS_Study.git
