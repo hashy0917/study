@@ -46,3 +46,6 @@
 [submodule "STM32_FreeRTOS_Study"]
 	path = STM32_FreeRTOS_Study
 	url = git@github.com:hashy0917/STM32_FreeRTOS_Study.git
+[submodule "FPGA-Study"]
+	path = FPGA-Study
+	url = git@github.com:hashy0917/FPGA-Study.git
